@@ -1,12 +1,33 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="static/style.css">
-    <title>{% block title %}Моя страница{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% block title %}Minecraft Dungeons{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
-<main>
-    {% block content %}
-    {% endblock %}
-</main>
+<body class="theme-dark">
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="{% url 'home' %}">Minecraft Wiki</a>
+            <nav class="nav">
+                <a class="nav-link {% if request.path == '/home' %}active{% endif %}" href="{% url 'home' %}">Главная</a>
+            </nav>
+            
+        </div>
+    </header>
+
+    <main class="site-main">
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p class="muted">© {{ now|default:"2025" }} Супер пупер программист</p>
+        </div>
+    </footer>
+</body>
 </html>

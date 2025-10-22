@@ -1,0 +1,184 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Legends</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+        body {
+            background: linear-gradient(180deg, #101010, #1a1a1a);
+            color: #f0f0f0;
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #222;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+            color: #6cf;
+            text-shadow: 0 0 10px #0af;
+            border-bottom: 2px solid #0af;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin: 20px auto;
+            padding: 10px 25px;
+            background: #0af;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 0 10px #0af;
+        }
+
+        .back-btn:hover {
+            background: #08c;
+            box-shadow: 0 0 15px #08c;
+            transform: scale(1.05);
+        }
+
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 25px;
+            background: #1e1e1e;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 200, 255, 0.2);
+        }
+
+        h2, h3 {
+            color: #79d8ff;
+            margin-top: 35px;
+            text-shadow: 0 0 5px #09f;
+        }
+
+        p {
+            text-align: justify;
+            margin: 10px 0;
+        }
+
+        ul {
+            list-style-type: square;
+            margin-left: 25px;
+        }
+
+        blockquote {
+            border-left: 4px solid #0af;
+            background: #222;
+            padding: 10px 20px;
+            font-style: italic;
+            margin: 20px 0;
+            color: #ccc;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            color: #ddd;
+        }
+
+        table, th, td {
+            border: 1px solid #444;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background: #2a2a2a;
+            color: #6cf;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #aaa;
+            font-size: 0.9em;
+            border-top: 1px solid #333;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 700px) {
+            main {
+                padding: 15px;
+                margin: 15px;
+            }
+            header {
+                font-size: 1.6em;
+            }
+            .back-btn {
+                padding: 8px 18px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Minecraft Legends</header>
+
+    <div style="text-align: center;">
+        <a href="{% url 'index' %}" class="back-btn">← На главную</a>
+    </div>
+
+    <main>
+        <p><strong>Minecraft Legends</strong> — видеоигра в жанре экшен-стратегии, выпущенная 18 апреля 2023 года, разработанная Mojang Studios и Blackbird Interactive и изданная Xbox Game Studios на Windows и Xbox, а также Mojang Studios на других платформах.</p>
+
+        <h2>Сюжет</h2>
+        <p>Minecraft Legends — это история, основанная на затерянной во времени легенде, которая сохранилась лишь в виде захватывающего повествования, передаваемого из поколения в поколение. Легенда рассказывает о великом герое, который спас Верхний мир, объединив всех мобов против вторжения прожорливых пиглинов, прежде чем их порча Нижнего мира поглотила всё вокруг.</p>
+
+        <blockquote>
+            «ЛЕГЕНДЫ MINECRAFT – Истории обладают огромной силой... Это история о Верхнем мире легенд Minecraft.»  
+            <br>— Кристина Андерка
+        </blockquote>
+
+        <h2>Геймплей</h2>
+        <p>Геймплей Minecraft Legends представляет собой стратегию в реальном времени с элементами экшена. Игрок управляет героем от третьего лица, защищает деревни, строит базы и руководит армией мобов в битве с пиглинами. Мир создаётся процедурно, а игра поддерживает мультиплеер до 8 игроков (4 на 4).</p>
+
+        <h3>Боссы</h3>
+        <ul>
+            <li><strong>Зверь</strong> — предводитель Орды Охоты. Быстр и разрушителен.</li>
+            <li><strong>Пожиратель</strong> — глава Орды Спор, покрытый грибковыми наростами.</li>
+            <li><strong>Неуязвимый</strong> — лидер Орды Бастиона, с золотыми украшениями и огнемётом.</li>
+            <li><strong>Великий Кабан</strong> — финальный босс, владыка всех орд пиглинов.</li>
+        </ul>
+
+        <h2>Покупка и доступность</h2>
+        <p>Стандартное издание стоит 39,99 $, а Deluxe Edition — 49,99 $. Игра доступна на Windows, Xbox One/Series X|S, Nintendo Switch, PS4 и PS5. Также поддерживается Xbox Cloud Gaming.</p>
+
+        <h2>Поддерживаемые языки</h2>
+        <table>
+            <tr><th>Язык</th><th>Интерфейс</th><th>Полное аудио</th><th>Субтитры</th></tr>
+            <tr><td>Русский</td><td>Да</td><td>Да</td><td>Да</td></tr>
+            <tr><td>Английский</td><td>Да</td><td>Да</td><td>Да</td></tr>
+            <tr><td>Немецкий</td><td>Да</td><td>Да</td><td>Да</td></tr>
+            <tr><td>Японский</td><td>Да</td><td>Да</td><td>Да</td></tr>
+        </table>
+
+        <h2>Системные требования</h2>
+        <table>
+            <tr><th>Компонент</th><th>Минимум</th><th>Рекомендуется</th></tr>
+            <tr><td>ОС</td><td>Windows 10+</td><td>Windows 11</td></tr>
+            <tr><td>Процессор</td><td>Intel Core i5 2.8 ГГц</td><td>Intel Core i5 3.4 ГГц</td></tr>
+            <tr><td>Память</td><td>8 ГБ ОЗУ</td><td>—</td></tr>
+            <tr><td>Графика</td><td>GTX 780 / Radeon 285</td><td>GTX 1060</td></tr>
+            <tr><td>Хранилище</td><td colspan="2">24 ГБ свободного места</td></tr>
+        </table>
+
+        <h2>Мелочи</h2>
+        <ul>
+            <li>Впервые показан на постере в интервью с разработчиками Minecraft Dungeons.</li>
+            <li>Поддержка игры прекратилась спустя несколько месяцев после релиза.</li>
+        </ul>
+    </main>
+
+    <footer>© Mojang Studios / Blackbird Interactive — Minecraft Legends, 2023</footer>
+</body>
+</html>

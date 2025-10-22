@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block title %}Minecraft: Story Mode{% endblock %}
+
+{% block content %}
+<style>
+    body.theme-dark {
+        background: linear-gradient(to bottom, #1b1b1b, #3a3a3a);
+        color: #f0f0f0;
+    }
+
+    .story-mode h1 {
+        color: #ff6600;
+        text-align: center;
+    }
+
+    .story-mode h2 {
+        color: #ff9933;
+        margin-top: 20px;
+    }
+
+    .story-mode p {
+        margin-bottom: 15px;
+        line-height: 1.6;
+    }
+
+    .story-mode ul {
+        margin-left: 20px;
+        margin-bottom: 15px;
+    }
+</style>
+
+<div class="story-mode">
+    <h1>Minecraft: Story Mode</h1>
+    <p>Это интерактивная игра-приключение по вселенной Minecraft, созданная Telltale Games. Игроки принимают решения, влияющие на ход истории.</p>
+
+    <h2>Основная информация</h2>
+    <ul>
+        <li>Разработчик: Telltale Games</li>
+        <li>Издатель: Telltale Games</li>
+        <li>Платформы: Windows, macOS, PS4, Xbox One, iOS, Android</li>
+        <li>Жанр: Приключение, интерактивный сюжет</li>
+        <li>Даты выпуска: 2015–2016</li>
+    </ul>
+
+    <h2>Описание игры</h2>
+    <p>Игроки управляют персонажем Джесси и его друзьями, сталкиваются с различными моральными выборами и приключениями в мире Minecraft. Каждое решение влияет на дальнейший сюжет и отношения с другими персонажами.</p>
+
+    <h2>Геймплей</h2>
+    <ul>
+        <li>Эпизодическая структура: игра состоит из нескольких эпизодов</li>
+        <li>Выборы и последствия: решения игрока меняют ход истории</li>
+        <li>Пазлы и мини-игры встроены в сюжет</li>
+        <li>Персонажи взаимодействуют с игроком в реальном времени</li>
+    </ul>
+
+    <h2>Особенности</h2>
+    <ul>
+        <li>Интерактивные сцены с Quick-Time Events</li>
+        <li>Красочная графика в стиле Minecraft</li>
+        <li>Возможность повторного прохождения для альтернативных исходов</li>
+    </ul>
+</div>
+{% endblock %}

@@ -1,22 +1,51 @@
 {% extends 'base.html' %}
 
-{% block content %}
-<p>Добро пожаловать на Minecraft Wiki — доступную и свободную для редактирования вики, где каждый может найти информацию о Minecraft и объектах, связанных с ним. Сейчас на вики 5538 статей, которые обслуживаются 14 активными участниками из числа сообщества Minecraft. Внести свой вклад может каждый!</p>
-<br>
-<h3>Поддерживаемые игры</h3>
-<p><a href = '/minecraft'>Minecraft</a> — это 3D-«песочница», разработанная компанией Mojang Studios, где игрок взаимодействует с игровым миром через размещение и разрушение различных блоков в трёх разных измерениях. Разнообразный игровой процесс позволяет игрокам самим выбирать пути прохождения игры, открывая бесчисленные возможности.
-Minecraft имеет четыре поддерживаемых издания: Java Edition, Bedrock Edition, Education Edition и China Edition.</p>
-<br>
-<p><a href="/minecraft_dungion">Minecraft Dungeons</a> — это ролевая видеоигра жанра «экшн/приключение», где игроки могут путешествовать по процедурно генерируемым уровням и сражаться лицом к лицу с монстрами и главным антагонистом игры — архизлодеянином.
-Minecraft Dungeons Arcade — это адаптация Minecraft Dungeons под аркадный режим, в котором для прохождения уровней и победы над большими группами мобов требуются четыре игрока. Игроки могут получить снаряжение, скины и питомцев, сканируя коллекционные карты.</p>
-<br>
-<p>Minecraft Legends — это стратегическая игра в реальном времени, где игроку необходимо освободить Верхний мир от пиглинов.</p>
-<br> 
-<h3>Более не поддерживаемые игры</h3>
-<br>
-<p>Minecraft: Story Mode была эпизодической приключенческой видеоигрой, основанной на игре жанра «песочница» Minecraft и разработанной компанией Telltale Games, где игрок принимал решения, влияющие на дальнейшее развитие сюжета.
-Minecraft: Story Mode - Season Two была сиквелом Minecraft: Story Mode и продолжением истории приключений оригинальной игры с элементами из более новых версий Minecraft.</p>
-<br>   
-<p>Minecraft Earth — это мобильная игра с дополненной реальностью (AR), где игроки путешествуют по реальным локациям, чтобы строить сооружения и собирать ресурсы. Она имеет множество уникальных аспектов игрового процесса и взаимодействий, похожих на основную игру. С 30 июня 2021 года больше не поддерживается разработчиками.</p>
+{% block title %}Minecraft Wiki — Главная{% endblock %}
 
+{% block content %}
+<section class="hero card gradient-emerald">
+  <h1 class="title">Minecraft Wiki</h1>
+  <p class="lead">
+    Добро пожаловать на Minecraft Wiki — свободную энциклопедию о вселенной Minecraft!  
+    Здесь вы найдёте подробную информацию о версиях, предметах, существах и многом другом.  
+    В вики уже более 5000 статей, которые поддерживаются сообществом Minecraft.
+  </p>
+</section>
+
+<section class="content-grid">
+  <article class="card">
+    <h3 class="section-title">Minecraft</h3>
+    <p>
+      <a href="/minecraft" class="text-link">Minecraft</a> — 3D-«песочница», разработанная Mojang Studios.  
+      Игрок может строить, исследовать и сражаться в процедурно генерируемом мире.  
+      Существует несколько изданий игры: Java Edition, Bedrock Edition, Education Edition и China Edition.
+    </p>
+  </article>
+
+  <article class="card">
+    <h3 class="section-title">Minecraft Dungeons</h3>
+    <p>
+      <a href="/minecraft_dungion" class="text-link">Minecraft Dungeons</a> — ролевая видеоигра в жанре экшн-приключения.  
+      Игроки исследуют случайно генерируемые подземелья и сражаются с монстрами.  
+      Доступны квесты, локации и DLC, добавляющие новые уровни и предметы.
+    </p>
+  </article>
+
+  <article class="card">
+    <h3 class="section-title">Minecraft Legends</h3>
+    <p>
+        <a href="/legends" class="text-link">Minecraft Legends</a> — стратегия в реальном времени, где игроку предстоит защитить Верхний мир от пиглинов.  
+      Игра сочетает элементы исследования, сражений и строительства.
+    </p>
+  </article>
+
+  <article class="card">
+    <h3 class="section-title">Старые игры</h3>
+    <ul class="list">
+      <li><strong><a href="/story" class="text-link">Minecraft: Story Mode</a></strong> — приключенческая игра от Telltale Games.</li>
+      <li><strong><a href="/storys2" class="text-link">Minecraft: Story Mode — Season Two</a></strong> — продолжение оригинала.</li>
+      <li><strong><a href="/earth" class="text-link">Minecraft Earth</a></strong> — мобильная AR-игра, закрытая 30 июня 2021 года.</li>
+    </ul>
+  </article>
+</section>
 {% endblock %}

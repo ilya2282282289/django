@@ -1,7 +1,66 @@
 {% extends 'base.html' %}
 
+{% block title %}Minecraft Dungeons — Обзор{% endblock %}
+
 {% block content %}
-<h1>Minecraft Dungeons</h1>
-<p>Minecraft Dungeons (рус. Minecraft Подземелья) — это ролевая видеоигра жанра экшн/приключение, разработанная Mojang Studios, Xbox Game Studios и Double Eleven. Она была выпущена 26 мая 2020 года для Windows, Xbox One, Nintendo Switch и PlayStation 4. Base Game доступна за US$19.99 (€19.99, £16.74, AU$29.95) и Hero Edition за US$29.99 (€29.99, £24.99, AU$39.95), который включает в себя Hero Pass, который включает в себя Плащ героя, животное цыплёнок, скины Пэйк и Варген и DLC-паки Jungle Awakens и Creeping Winter.[14] Версии для Windows 10 и Xbox One также доступны как часть Xbox Game Pass.</p>
-<a href = 'home'>На главную</a>
+<section class="hero card gradient-emerald">
+  <h1 class="title">Minecraft Dungeons</h1>
+  <p class="lead">
+    Minecraft Dungeons — ролевая видеоигра жанра экшн/приключение от Mojang Studios, Xbox Game Studios и Double Eleven.
+    Выпуск состоялся 26 мая 2020 года для Windows, Xbox One, Nintendo Switch и PlayStation 4.
+  </p>
+</section>
+
+<section class="content-grid">
+  <article class="card">
+    <h3 class="section-title">Игровой процесс</h3>
+    <p>
+      В игре есть специальные квесты и локации, а также процедурно сгенерированные элементы. Игрок не ограничен одним классом и
+      может собирать больше доспехов или оружия и использовать их. Строительство и добыча ресурсов отсутствуют — акцент на экшн и приключение.
+    </p>
+    <p>
+      Действие разворачивается как над землёй, так и под ней. Уровни генерируются процедурно, возможны ключи генерации.
+      Игроки могут переигрывать уровни и развивать персонажа через лут и прокачку.
+    </p>
+  </article>
+
+  <article class="card">
+    <h3 class="section-title">Персонаж</h3>
+    <p>
+      Персонаж — это герой, которым управляет игрок. При создании выбирается косметический скин, который можно изменить позже на экране выбора персонажа.
+    </p>
+    <p>
+      Вся добыча, уровни и прогресс закреплены за конкретным персонажем и не переносятся на других.
+    </p>
+  </article>
+
+  <article class="card">
+    <h3 class="section-title">Локации</h3>
+    <p class="muted">Main article: Minecraft Dungeons:Локации</p>
+    <p>
+      Стартовая локация — Побережье кальмаров. Далее открываются Леса криперов и другие уровни. Иногда генерируются комнаты-доступы к секретам
+      (например, Жуткая крипта или Архиприют). Дополнительные уровни открываются через обычные, такие как Тыквенные пастбища,
+      Шахты красного камня и Каньон кактусов.
+    </p>
+    <p>
+      Отдельные локации доступны только через DLC: Jungle Awakens, Creeping Winter, Howling Peaks, Flames of the Nether,
+      Hidden Depths, Echoing Void.
+    </p>
+  </article>
+
+  <article class="card">
+    <h3 class="section-title">Предметы</h3>
+    <p class="muted">Main article: Minecraft Dungeons:Предмет</p>
+    <ul class="list">
+      <li><strong>Оружие</strong> — ближний и дальний бой для нанесения урона.</li>
+      <li><strong>Броня</strong> — защита от урона и усиление характеристик.</li>
+      <li><strong>Артефакты</strong> — активируемые предметы: бафы, урон, лечение союзников.</li>
+      <li><strong>Танцы</strong> — косметические эмоции, доступны через пропуск.</li>
+    </ul>
+  </article>
+</section>
+
+<div class="actions">
+  <a class="btn" href="{% url 'home' %}">На главную</a>
+</div>
 {% endblock %}
